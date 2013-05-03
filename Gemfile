@@ -10,3 +10,4 @@ platforms :ruby do
   gem 'rb-readline'
 end
 gem 'uglifier'
+gem 'yui-compressor'
