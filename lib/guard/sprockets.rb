@@ -25,7 +25,7 @@ module Guard
         begin
           require 'uglifier'
           require 'yui/compressor'
-          @sprockets.js_compressor = ::Uglifier.new
+          @sprockets.js_compressor = ::Uglifier.new(:output => { :comments => :none })
           @sprockets.css_compressor = ::YUI::CssCompressor.new
           UI.info 'Sprockets will compress output.'
         rescue LoadError => ex
